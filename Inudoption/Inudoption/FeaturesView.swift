@@ -13,26 +13,47 @@ struct Feature {
     let imageName: String
 }
 
-struct ContentView: View {
+struct FeaturesView: View {
+    @Binding var shouldShowMainScreen: Bool
+
     let features: [Feature] = [
-        Feature(title: "Dogs?",
-                description: "Cats",
+        Feature(title: "Find a new best friend, today",
+                description: "Are you ready to begin a new adventure? We have a catalog of over 200,000 pets!",
                 imageName: "pawprint.fill"),
-        Feature(title: "Feature 2",
-                description: "Description2",
-                imageName: "pawprint.fill"),
-        Feature(title: "Feature 3",
-                description: "Description3",
-                imageName: "pawprint.fill")
+        Feature(title: "Always Free",
+                description: "Our mission is to match people with pets, not to make bank",
+                imageName: "dollarsign.circle.fill"),
+        Feature(title: "Dogs? Cats? Parrots?",
+                description: "We've got them all!",
+                imageName: "aqi.medium"),
+        Feature(title: "Vaccinated and ready to go",
+                description: "Every pet on the platform has gone through a medical check and is 100% vax",
+                imageName: "cross.fill")
     ]
 
     var body: some View {
         VStack(alignment: .leading) {
             ReusableTitle(topTitle: "Welcome to", bottomTitle: "Inudoption")
             VStack(alignment: .leading, spacing: 20) {
-                ReusableRow(feature: features[0])
+                ForEach(features, id: \.title) { feature in
+                    ReusableRow(feature: feature)
+                }
+            }
+            Spacer()
+
+            HStack {
+                Spacer()
+                Button("Start") {
+                    shouldShowMainScreen = true
+                }
+                .padding()
+                .background(.orange)
+                .foregroundColor(.white)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+                Spacer()
             }
         }
+        .padding([.trailing, .leading], 20)
     }
 }
 
@@ -90,6 +111,6 @@ struct ReusableTitle: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FeaturesView(shouldShowMainScreen: .constant(false))
     }
 }

@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct InudoptionApp: App {
+
+    @AppStorage("shouldShowMainScreen") var shouldShowMainScreen = false
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if shouldShowMainScreen {
+                MainScreen()
+            } else {
+                FeaturesView(shouldShowMainScreen: $shouldShowMainScreen)
+            }
         }
     }
 }
