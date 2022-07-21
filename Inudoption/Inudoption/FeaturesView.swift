@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Inudoption
-//
-//  Created by Martin García on 7/18/22.
-//
-
 import SwiftUI
 
 struct Feature {
@@ -40,20 +33,20 @@ struct FeaturesView: View {
                 }
             }
             Spacer()
-
             HStack {
                 Spacer()
                 Button("Start") {
                     shouldShowMainScreen = true
                 }
                 .padding()
-                .background(.orange)
+                .background(Color.inuPrimary)
                 .foregroundColor(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 16))
                 Spacer()
             }
         }
-        .padding([.trailing, .leading], 20)
+        .padding(.horizontal, 32)
+        .padding(.vertical, 67)
     }
 }
 
@@ -68,7 +61,7 @@ struct ReusableRow: View {
                     .font(.headline)
                 Text(feature.description)
                     .font(.caption2)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.inuTertiary.opacity(0.6))
             }
         }
     }
@@ -82,11 +75,11 @@ struct ReusableRoundedIcon: View {
             // 0
             RoundedRectangle(cornerRadius: 8)
                 .frame(width: 53, height: 53)
-                .foregroundColor(.orange)
+                .foregroundColor(.inuPrimary)
             // 1
             Image(systemName: imageName)
                 .imageScale(.large)
-                .foregroundColor(.gray)
+                .foregroundColor(.inuSecondary)
         }
     }
 }
@@ -100,17 +93,11 @@ struct ReusableTitle: View {
             Text(topTitle)
                 .font(.subheadline)
                 .bold()
-                .foregroundColor(.gray)
+                .foregroundColor(.inuTertiary.opacity(0.6))
             Text(bottomTitle)
                 .font(.largeTitle)
                 .bold()
-                .foregroundColor(.orange)
+                .foregroundColor(.inuPrimary)
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        FeaturesView(shouldShowMainScreen: .constant(false))
     }
 }

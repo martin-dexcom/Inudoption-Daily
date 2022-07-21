@@ -8,16 +8,26 @@
 import SwiftUI
 
 @main
-struct InudoptionApp: App {
-
+struct MyApp: App {
     @AppStorage("shouldShowMainScreen") var shouldShowMainScreen = false
 
     var body: some Scene {
         WindowGroup {
-            if shouldShowMainScreen {
-                MainScreen()
-            } else {
-                FeaturesView(shouldShowMainScreen: $shouldShowMainScreen)
+            VStack {
+                if shouldShowMainScreen {
+                    TabView {
+                        MainScreen()
+                            .tabItem {
+                                Label("Adoption", systemImage: "pawprint.fill")
+                            }
+                        FeaturesView(shouldShowMainScreen: $shouldShowMainScreen)
+                            .tabItem {
+                                Label("Settings", systemImage: "gear")
+                            }
+                    }
+                } else {
+                    FeaturesView(shouldShowMainScreen: $shouldShowMainScreen)
+                }
             }
         }
     }
