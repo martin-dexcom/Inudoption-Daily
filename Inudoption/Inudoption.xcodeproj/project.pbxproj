@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1280ABEB288A13FD00F7BB9B /* InudoptionTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280ABEA288A13FD00F7BB9B /* InudoptionTabView.swift */; };
+		1280ABED288A14D700F7BB9B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280ABEC288A14D700F7BB9B /* SettingsView.swift */; };
+		1280ABEF288A19AA00F7BB9B /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280ABEE288A19AA00F7BB9B /* Friend.swift */; };
+		1280ABF1288A270C00F7BB9B /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280ABF0288A270C00F7BB9B /* MainScreenViewModel.swift */; };
+		1280ABF3288A29E400F7BB9B /* InuNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280ABF2288A29E400F7BB9B /* InuNetworkLayer.swift */; };
 		12F0A90C288771C200FFAE0E /* SwiftUIViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0A90B288771C200FFAE0E /* SwiftUIViewLayout.swift */; };
 		12F0A90E288787E100FFAE0E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0A90D288787E100FFAE0E /* MainScreen.swift */; };
 		940E2D27288627000031F5C8 /* InudoptionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E2D26288627000031F5C8 /* InudoptionApp.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1280ABEA288A13FD00F7BB9B /* InudoptionTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InudoptionTabView.swift; sourceTree = "<group>"; };
+		1280ABEC288A14D700F7BB9B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1280ABEE288A19AA00F7BB9B /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		1280ABF0288A270C00F7BB9B /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		1280ABF2288A29E400F7BB9B /* InuNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InuNetworkLayer.swift; sourceTree = "<group>"; };
 		12F0A90B288771C200FFAE0E /* SwiftUIViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewLayout.swift; sourceTree = "<group>"; };
 		12F0A90D288787E100FFAE0E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		940E2D23288627000031F5C8 /* Inudoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inudoption.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +74,11 @@
 				940E2D2C288627020031F5C8 /* Preview Content */,
 				12F0A90B288771C200FFAE0E /* SwiftUIViewLayout.swift */,
 				12F0A90D288787E100FFAE0E /* MainScreen.swift */,
+				1280ABEA288A13FD00F7BB9B /* InudoptionTabView.swift */,
+				1280ABEC288A14D700F7BB9B /* SettingsView.swift */,
+				1280ABEE288A19AA00F7BB9B /* Friend.swift */,
+				1280ABF0288A270C00F7BB9B /* MainScreenViewModel.swift */,
+				1280ABF2288A29E400F7BB9B /* InuNetworkLayer.swift */,
 			);
 			path = Inudoption;
 			sourceTree = "<group>";
@@ -146,11 +161,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1280ABED288A14D700F7BB9B /* SettingsView.swift in Sources */,
+				1280ABF3288A29E400F7BB9B /* InuNetworkLayer.swift in Sources */,
 				12F0A90E288787E100FFAE0E /* MainScreen.swift in Sources */,
 				94AF20B62888DEF400B99A77 /* ColorExtensions.swift in Sources */,
 				12F0A90C288771C200FFAE0E /* SwiftUIViewLayout.swift in Sources */,
 				940E2D29288627000031F5C8 /* FeaturesView.swift in Sources */,
+				1280ABF1288A270C00F7BB9B /* MainScreenViewModel.swift in Sources */,
 				940E2D27288627000031F5C8 /* InudoptionApp.swift in Sources */,
+				1280ABEB288A13FD00F7BB9B /* InudoptionTabView.swift in Sources */,
+				1280ABEF288A19AA00F7BB9B /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

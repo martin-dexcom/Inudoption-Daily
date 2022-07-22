@@ -101,3 +101,9 @@ struct ReusableTitle: View {
         }
     }
 }
+
+struct FeatureViewPreview: PreviewProvider {
+    static var previews: some View {
+        FeaturesView(shouldShowMainScreen: .constant(false))
+    }
+}
