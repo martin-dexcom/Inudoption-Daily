@@ -10,7 +10,7 @@ struct FeaturesView: View {
     @Binding var shouldShowMainScreen: Bool
 
     let features: [Feature] = [
-        Feature(title: "Find a new best friend, today",
+        Feature(title: "Find a new best friends, today",
                 description: "Are you ready to begin a new adventure? We have a catalog of over 200,000 pets!",
                 imageName: "pawprint.fill"),
         Feature(title: "Always Free",
