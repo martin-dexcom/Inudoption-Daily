@@ -14,6 +14,12 @@
 		1280ABF3288A29E400F7BB9B /* InuNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280ABF2288A29E400F7BB9B /* InuNetworkLayer.swift */; };
 		12F0A90C288771C200FFAE0E /* SwiftUIViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0A90B288771C200FFAE0E /* SwiftUIViewLayout.swift */; };
 		12F0A90E288787E100FFAE0E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0A90D288787E100FFAE0E /* MainScreen.swift */; };
+		71EDA4A4288F16BA00FE60EB /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EDA4A3288F16BA00FE60EB /* Animal.swift */; };
+		71EDA4A6288F16F900FE60EB /* Verifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EDA4A5288F16F900FE60EB /* Verifiable.swift */; };
+		71EDA4A8288F172900FE60EB /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EDA4A7288F172900FE60EB /* CircularButton.swift */; };
+		71EDA4AA288F175D00FE60EB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EDA4A9288F175D00FE60EB /* Card.swift */; };
+		71EDA4AC288F179700FE60EB /* FriendDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EDA4AB288F179700FE60EB /* FriendDetails.swift */; };
+		71EDA4AE288F17CA00FE60EB /* InuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EDA4AD288F17CA00FE60EB /* InuButton.swift */; };
 		940E2D27288627000031F5C8 /* InudoptionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E2D26288627000031F5C8 /* InudoptionApp.swift */; };
 		940E2D29288627000031F5C8 /* FeaturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E2D28288627000031F5C8 /* FeaturesView.swift */; };
 		940E2D2B288627020031F5C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940E2D2A288627020031F5C8 /* Assets.xcassets */; };
@@ -29,6 +35,12 @@
 		1280ABF2288A29E400F7BB9B /* InuNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InuNetworkLayer.swift; sourceTree = "<group>"; };
 		12F0A90B288771C200FFAE0E /* SwiftUIViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewLayout.swift; sourceTree = "<group>"; };
 		12F0A90D288787E100FFAE0E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		71EDA4A3288F16BA00FE60EB /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		71EDA4A5288F16F900FE60EB /* Verifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verifiable.swift; sourceTree = "<group>"; };
+		71EDA4A7288F172900FE60EB /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
+		71EDA4A9288F175D00FE60EB /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		71EDA4AB288F179700FE60EB /* FriendDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetails.swift; sourceTree = "<group>"; };
+		71EDA4AD288F17CA00FE60EB /* InuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InuButton.swift; sourceTree = "<group>"; };
 		940E2D23288627000031F5C8 /* Inudoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inudoption.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		940E2D26288627000031F5C8 /* InudoptionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InudoptionApp.swift; sourceTree = "<group>"; };
 		940E2D28288627000031F5C8 /* FeaturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesView.swift; sourceTree = "<group>"; };
@@ -48,10 +60,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		940E2D1A288627000031F5C8 = {
+		71EDA49C288F14A100FE60EB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				94AF20B52888DEF400B99A77 /* ColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		71EDA49D288F14B200FE60EB /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				1280ABF2288A29E400F7BB9B /* InuNetworkLayer.swift */,
+				1280ABF0288A270C00F7BB9B /* MainScreenViewModel.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		71EDA49E288F14CA00FE60EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71EDA4A3288F16BA00FE60EB /* Animal.swift */,
+				1280ABEE288A19AA00F7BB9B /* Friend.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71EDA49F288F14EE00FE60EB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				71EDA4A5288F16F900FE60EB /* Verifiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		71EDA4A0288F151200FE60EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				940E2D28288627000031F5C8 /* FeaturesView.swift */,
+				1280ABEA288A13FD00F7BB9B /* InudoptionTabView.swift */,
+				12F0A90D288787E100FFAE0E /* MainScreen.swift */,
+				12F0A90B288771C200FFAE0E /* SwiftUIViewLayout.swift */,
+				1280ABEC288A14D700F7BB9B /* SettingsView.swift */,
+				71EDA4A1288F152C00FE60EB /* Button Style */,
+				71EDA4A2288F153400FE60EB /* Elements */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71EDA4A1288F152C00FE60EB /* Button Style */ = {
+			isa = PBXGroup;
+			children = (
+				71EDA4A7288F172900FE60EB /* CircularButton.swift */,
+			);
+			path = "Button Style";
+			sourceTree = "<group>";
+		};
+		71EDA4A2288F153400FE60EB /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				71EDA4A9288F175D00FE60EB /* Card.swift */,
+				71EDA4AB288F179700FE60EB /* FriendDetails.swift */,
+				71EDA4AD288F17CA00FE60EB /* InuButton.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		940E2D1A288627000031F5C8 = {
+			isa = PBXGroup;
+			children = (
+				940E2D2A288627020031F5C8 /* Assets.xcassets */,
+				71EDA49C288F14A100FE60EB /* Extensions */,
+				71EDA49D288F14B200FE60EB /* Logic */,
+				71EDA49E288F14CA00FE60EB /* Models */,
+				71EDA49F288F14EE00FE60EB /* Protocols */,
+				71EDA4A0288F151200FE60EB /* Views */,
 				940E2D25288627000031F5C8 /* Inudoption */,
 				940E2D24288627000031F5C8 /* Products */,
 			);
@@ -69,16 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				940E2D26288627000031F5C8 /* InudoptionApp.swift */,
-				940E2D28288627000031F5C8 /* FeaturesView.swift */,
-				940E2D2A288627020031F5C8 /* Assets.xcassets */,
 				940E2D2C288627020031F5C8 /* Preview Content */,
-				12F0A90B288771C200FFAE0E /* SwiftUIViewLayout.swift */,
-				12F0A90D288787E100FFAE0E /* MainScreen.swift */,
-				1280ABEA288A13FD00F7BB9B /* InudoptionTabView.swift */,
-				1280ABEC288A14D700F7BB9B /* SettingsView.swift */,
-				1280ABEE288A19AA00F7BB9B /* Friend.swift */,
-				1280ABF0288A270C00F7BB9B /* MainScreenViewModel.swift */,
-				1280ABF2288A29E400F7BB9B /* InuNetworkLayer.swift */,
 			);
 			path = Inudoption;
 			sourceTree = "<group>";
@@ -161,12 +235,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71EDA4A6288F16F900FE60EB /* Verifiable.swift in Sources */,
+				71EDA4A4288F16BA00FE60EB /* Animal.swift in Sources */,
+				71EDA4AE288F17CA00FE60EB /* InuButton.swift in Sources */,
 				1280ABED288A14D700F7BB9B /* SettingsView.swift in Sources */,
+				71EDA4A8288F172900FE60EB /* CircularButton.swift in Sources */,
 				1280ABF3288A29E400F7BB9B /* InuNetworkLayer.swift in Sources */,
 				12F0A90E288787E100FFAE0E /* MainScreen.swift in Sources */,
+				71EDA4AC288F179700FE60EB /* FriendDetails.swift in Sources */,
 				94AF20B62888DEF400B99A77 /* ColorExtensions.swift in Sources */,
 				12F0A90C288771C200FFAE0E /* SwiftUIViewLayout.swift in Sources */,
 				940E2D29288627000031F5C8 /* FeaturesView.swift in Sources */,
+				71EDA4AA288F175D00FE60EB /* Card.swift in Sources */,
 				1280ABF1288A270C00F7BB9B /* MainScreenViewModel.swift in Sources */,
 				940E2D27288627000031F5C8 /* InudoptionApp.swift in Sources */,
 				1280ABEB288A13FD00F7BB9B /* InudoptionTabView.swift in Sources */,
