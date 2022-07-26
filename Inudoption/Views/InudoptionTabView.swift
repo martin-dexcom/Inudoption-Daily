@@ -9,29 +9,24 @@ import SwiftUI
 
 struct InudoptionTabView: View {
     @AppStorage("shouldShowMainScreen") var shouldShowMainScreen = false
-
+    
     var body: some View {
-        VStack {
-            if shouldShowMainScreen {
+        if shouldShowMainScreen {
+            NavigationView {
                 TabView {
                     MainScreen()
                         .tabItem {
                             Label("Adoption", systemImage: "pawprint.fill")
                         }
+                        .navigationBarHidden(true)
                     SettingsView()
                         .tabItem {
                             Label("Settings", systemImage: "gear")
                         }
                 }
+            }
             } else {
                 FeaturesView(shouldShowMainScreen: $shouldShowMainScreen)
             }
-        }
-    }
-}
-
-struct InudoptionTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        InudoptionTabView()
     }
 }

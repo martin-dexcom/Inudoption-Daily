@@ -14,6 +14,8 @@
 		1280ABF3288A29E400F7BB9B /* InuNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280ABF2288A29E400F7BB9B /* InuNetworkLayer.swift */; };
 		12F0A90C288771C200FFAE0E /* SwiftUIViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0A90B288771C200FFAE0E /* SwiftUIViewLayout.swift */; };
 		12F0A90E288787E100FFAE0E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0A90D288787E100FFAE0E /* MainScreen.swift */; };
+		7123AB2828906B14004E3C39 /* MatchedFriendCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7123AB2728906B14004E3C39 /* MatchedFriendCard.swift */; };
+		7123AB2C28908F4A004E3C39 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7123AB2B28908F4A004E3C39 /* DetailView.swift */; };
 		71EDA4A4288F16BA00FE60EB /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EDA4A3288F16BA00FE60EB /* Animal.swift */; };
 		71EDA4A6288F16F900FE60EB /* Verifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EDA4A5288F16F900FE60EB /* Verifiable.swift */; };
 		71EDA4A8288F172900FE60EB /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EDA4A7288F172900FE60EB /* CircularButton.swift */; };
@@ -35,6 +37,8 @@
 		1280ABF2288A29E400F7BB9B /* InuNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InuNetworkLayer.swift; sourceTree = "<group>"; };
 		12F0A90B288771C200FFAE0E /* SwiftUIViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewLayout.swift; sourceTree = "<group>"; };
 		12F0A90D288787E100FFAE0E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		7123AB2728906B14004E3C39 /* MatchedFriendCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedFriendCard.swift; sourceTree = "<group>"; };
+		7123AB2B28908F4A004E3C39 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		71EDA4A3288F16BA00FE60EB /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		71EDA4A5288F16F900FE60EB /* Verifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verifiable.swift; sourceTree = "<group>"; };
 		71EDA4A7288F172900FE60EB /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 				71EDA4A9288F175D00FE60EB /* Card.swift */,
 				71EDA4AB288F179700FE60EB /* FriendDetails.swift */,
 				71EDA4AD288F17CA00FE60EB /* InuButton.swift */,
+				7123AB2728906B14004E3C39 /* MatchedFriendCard.swift */,
+				7123AB2B28908F4A004E3C39 /* DetailView.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71EDA4A6288F16F900FE60EB /* Verifiable.swift in Sources */,
+				7123AB2C28908F4A004E3C39 /* DetailView.swift in Sources */,
 				71EDA4A4288F16BA00FE60EB /* Animal.swift in Sources */,
 				71EDA4AE288F17CA00FE60EB /* InuButton.swift in Sources */,
 				1280ABED288A14D700F7BB9B /* SettingsView.swift in Sources */,
@@ -248,6 +255,7 @@
 				940E2D29288627000031F5C8 /* FeaturesView.swift in Sources */,
 				71EDA4AA288F175D00FE60EB /* Card.swift in Sources */,
 				1280ABF1288A270C00F7BB9B /* MainScreenViewModel.swift in Sources */,
+				7123AB2828906B14004E3C39 /* MatchedFriendCard.swift in Sources */,
 				940E2D27288627000031F5C8 /* InudoptionApp.swift in Sources */,
 				1280ABEB288A13FD00F7BB9B /* InudoptionTabView.swift in Sources */,
 				1280ABEF288A19AA00F7BB9B /* Friend.swift in Sources */,

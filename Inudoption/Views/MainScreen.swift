@@ -13,39 +13,59 @@ struct MainScreen: View {
     var body: some View {
         VStack(alignment: .center) {
             HStack {
-                ReusableTitle(topTitle: "Adopt a", bottomTitle: "Best Friend")
+                ReusableTitle(topTitle: "Adopt a",
+                              bottomTitle: "Best Friend")
                 Spacer()
             }
             friendsView
             ZStack {
                 ForEach($viewModel.friends) { friend in
-                    Card(friend: friend.wrappedValue)
-                        .onTapGesture {
-                            viewModel.filterFriends(with: friend.id)
+                    VStack {
+                        NavigationLink {
+                            DetailView(friend: friend.wrappedValue,
+                                       isAlreadyMatched: false, matchAction: {
+                                viewModel.match()
+                            }, discardAction: {
+                                viewModel.discard()
+                            })
+                        } label: {
+                            Card(friend: friend.wrappedValue)
                         }
+                    }
                 }
             }
             HStack(spacing: 8) {
                 InuButton(action: {
-                    print("Discard")
+                    viewModel.discard()
                 }, type: .discard)
                 InuButton(action: {
-                    print("Match")
+                    viewModel.match()
                 }, type: .match)
             }
         }
         .padding(.horizontal, 17)
         .padding(.vertical, 28)
     }
+    // We wrapped this view on a nav. view
+    // that means that we can now move to other screens with user interaction
     
+    // Homework:
+    // - How do we remove the coloring from this link?
+    // - How do we make sure these tabs are the correct size within a column?
+    // How do I remove the large spacing?
     var friendsView: some View {
         ScrollView(.horizontal) {
             HStack {
-                ForEach(0..<11) { number in
-                    Text("Friend \(number)")
+                ForEach($viewModel.matchedFriends) { friend in
+                    NavigationLink {
+                        DetailView(friend: friend.wrappedValue,
+                                   isAlreadyMatched: true,
+                                   matchAction: { },
+                                   discardAction: { })
+                    } label: {
+                        MatchedFriendView(friend: friend.wrappedValue)
+                    }
                 }
-                .frame(width: 105, height: 70, alignment: .center)
-                .background(Color.inuTertiary)
             }
         }
     }
