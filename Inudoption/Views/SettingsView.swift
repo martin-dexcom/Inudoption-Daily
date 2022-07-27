@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct SettingsView: View {
+    let settingsText: LocalizedStringKey = "settingsText"
     var body: some View {
-        Text("Hello, World! Settings")
+        Text(settingsText)
     }
 }
 

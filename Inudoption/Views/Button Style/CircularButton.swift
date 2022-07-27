@@ -15,8 +15,8 @@ struct CircularButton: ButtonStyle {
         configuration
             .label
             .frame(width: 54, height: 54)
-            .background(type == .match ? .red : .white)
-            .foregroundColor(type == .match ? .orange : .red)
+            .background(type == .match ? Color.redSecondary : .white)
+            .foregroundColor(Color.redPrimary)
             .clipShape(Circle())
             .opacity(configuration.isPressed ? 0.95 : 1)
             .shadow(radius: 2)

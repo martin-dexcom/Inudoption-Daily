@@ -13,8 +13,8 @@ struct MainScreen: View {
     var body: some View {
         VStack(alignment: .center) {
             HStack {
-                ReusableTitle(topTitle: "Adopt a",
-                              bottomTitle: "Best Friend")
+                ReusableTitle(topTitle: "adopt",
+                              bottomTitle: LocalizedStringKey("bestFriend"))
                 Spacer()
             }
             friendsView

@@ -10,23 +10,23 @@ struct FeaturesView: View {
     @Binding var shouldShowMainScreen: Bool
 
     let features: [Feature] = [
-        Feature(title: "Find a new best friends, today",
-                description: "Are you ready to begin a new adventure? We have a catalog of over 200,000 pets!",
+        Feature(title: "findFriend",
+                description: "begin",
                 imageName: "pawprint.fill"),
-        Feature(title: "Always Free",
-                description: "Our mission is to match people with pets, not to make bank",
+        Feature(title: "alwaysFree",
+                description: "ourMission",
                 imageName: "dollarsign.circle.fill"),
-        Feature(title: "Dogs? Cats? Parrots?",
-                description: "We've got them all!",
+        Feature(title: "animal",
+                description: "all",
                 imageName: "aqi.medium"),
-        Feature(title: "Vaccinated and ready to go",
-                description: "Every pet on the platform has gone through a medical check and is 100% vax",
+        Feature(title: "vaccinated",
+                description: "every",
                 imageName: "cross.fill")
     ]
 
     var body: some View {
         VStack(alignment: .leading) {
-            ReusableTitle(topTitle: "Welcome to", bottomTitle: "Inudoption")
+            ReusableTitle(topTitle: "welcome", bottomTitle: "Inudoption")
             VStack(alignment: .leading, spacing: 20) {
                 ForEach(features, id: \.title) { feature in
                     ReusableRow(feature: feature)
@@ -57,11 +57,13 @@ struct ReusableRow: View {
         HStack {
             ReusableRoundedIcon(imageName: feature.imageName)
             VStack(alignment: .leading, spacing: 0) {
-                Text(feature.title)
+                Text(LocalizedStringKey(feature.title))
                     .font(.headline)
-                Text(feature.description)
+                    .minimumScaleFactor(0.3)
+                Text(LocalizedStringKey(feature.description))
                     .font(.caption2)
                     .foregroundColor(.inuTertiary.opacity(0.6))
+                    .minimumScaleFactor(0.3)
             }
         }
     }
@@ -86,11 +88,11 @@ struct ReusableRoundedIcon: View {
 
 struct ReusableTitle: View {
     let topTitle: String
-    let bottomTitle: String
+    let bottomTitle: LocalizedStringKey
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Text(topTitle)
+            Text(LocalizedStringKey(topTitle))
                 .font(.subheadline)
                 .bold()
                 .foregroundColor(.inuTertiary.opacity(0.6))

@@ -30,7 +30,7 @@ extension Color {
 extension Color {
     static let inuPrimary = Color(hex: 0xFFB68F)
     static let inuSecondary = Color(hex: 0xFBD3AE)
-    static let inuTertiary = Color(hex: 0x3C3C43)
+    static let inuTertiary = Color.secondary
     // Inudoption Red Colors
     static let redPrimary = Color(hex: 0xFF6286)
     static let redSecondary = Color(hex: 0xFCA9A9)

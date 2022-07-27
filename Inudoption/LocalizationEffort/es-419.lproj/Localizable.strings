@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  Inudoption
+
+  Created by Andres De La Cruz on 7/26/22.
+  
+*/
+
+/* Top title String*/
+"adopt" = "Adopta a";
+
+"welcome" = "Bienvenido";
+
+"bestFriend" = "Mejor Amigo";
+
+"findFriend" = "Encuentra un mejor amigo, hoy";
+
+"begin" = "Estas listo para empezar una nueva aventura ? Tenemos un catalogo de mas de 200,000 mascotas!";
+
+"alwaysFree" = "Siempre Libre";
+
+"ourMission" = "Nuestra mision es conectar a personas con mascotas";
+
+"animal" = "Perros? Gatos? Pajaros?";
+
+"all" = "Los tenemos a todos!";
+
+"vaccinated" = "Vacunados y listos para irse";
+
+"every" = "Todos nuestros mascotas registradas han cubierto su cartilla de vacunacion";
+
+"settingsText" = "Bienvendios a Configuracion";
