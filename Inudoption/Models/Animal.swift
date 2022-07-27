@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Animal: String, Codable {
+enum Animal: String, Codable, CaseIterable {
     case bird = "Bird"
     case cat = "Cat"
     case dog = "Dog"

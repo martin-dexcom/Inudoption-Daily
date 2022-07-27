@@ -25,8 +25,8 @@ struct InudoptionTabView: View {
                         }
                 }
             }
-            } else {
-                FeaturesView(shouldShowMainScreen: $shouldShowMainScreen)
-            }
+        } else {
+            FeaturesView(shouldShowMainScreen: $shouldShowMainScreen)
+        }
     }
 }

@@ -19,7 +19,7 @@ struct MainScreen: View {
             }
             friendsView
             ZStack {
-                ForEach($viewModel.friends) { friend in
+                ForEach($viewModel.friends.filter(viewModel.filterExpressionForDummies)) { friend in
                     VStack {
                         NavigationLink {
                             DetailView(friend: friend.wrappedValue,
