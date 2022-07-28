@@ -43,13 +43,15 @@ class MainScreenViewModel: ObservableObject {
             }
     }
     
-    func match() {
+    func match() -> Friend? {
         if let lastFriend = friends
             .filter(filterExpression)
             .last {
             friends.removeAll(where: { $0.id == lastFriend.id })
             matchedFriends.append(lastFriend)
+            return lastFriend
         }
+        return nil
     }
     
     func discard() {

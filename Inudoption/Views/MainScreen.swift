@@ -18,13 +18,14 @@ struct MainScreen: View {
                 Spacer()
             }
             friendsView
+            Spacer()
             ZStack {
                 ForEach($viewModel.friends.filter(viewModel.filterExpressionForDummies)) { friend in
                     VStack {
                         NavigationLink {
                             DetailView(friend: friend.wrappedValue,
                                        isAlreadyMatched: false, matchAction: {
-                                viewModel.match()
+                                _ = viewModel.match()
                             }, discardAction: {
                                 viewModel.discard()
                             })
@@ -39,12 +40,18 @@ struct MainScreen: View {
                     viewModel.discard()
                 }, type: .discard)
                 InuButton(action: {
-                    viewModel.match()
+                    if let friend = viewModel.match() {
+                        let subtitle = "You matched with \(friend.name)"
+                        NotificationManager.shared.showNotification(title: "Say hello to your new friend", subtitle: subtitle)
+                    }
                 }, type: .match)
             }
         }
         .padding(.horizontal, 17)
         .padding(.vertical, 28)
+        .onAppear {
+            NotificationManager.shared.requestNotificationPermission()
+        }
     }
     // We wrapped this view on a nav. view
     // that means that we can now move to other screens with user interaction
