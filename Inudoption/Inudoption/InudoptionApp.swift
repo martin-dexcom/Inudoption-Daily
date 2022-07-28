@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct MyApp: App {
     @AppStorage("shouldShowMainScreen") var shouldShowMainScreen = false
+    @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
 
     var body: some Scene {
         WindowGroup {

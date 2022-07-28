@@ -12,6 +12,8 @@
 		1280ABEF288A19AA00F7BB9B /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280ABEE288A19AA00F7BB9B /* Friend.swift */; };
 		1280ABF1288A270C00F7BB9B /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280ABF0288A270C00F7BB9B /* MainScreenViewModel.swift */; };
 		1280ABF3288A29E400F7BB9B /* InuNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280ABF2288A29E400F7BB9B /* InuNetworkLayer.swift */; };
+		1280ABFF289209D500F7BB9B /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280ABFE289209D500F7BB9B /* NotificationManager.swift */; };
+		1280AC0128920E1400F7BB9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280AC0028920E1400F7BB9B /* AppDelegate.swift */; };
 		12F0A90C288771C200FFAE0E /* SwiftUIViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0A90B288771C200FFAE0E /* SwiftUIViewLayout.swift */; };
 		12F0A90E288787E100FFAE0E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0A90D288787E100FFAE0E /* MainScreen.swift */; };
 		7123AB2828906B14004E3C39 /* MatchedFriendCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7123AB2728906B14004E3C39 /* MatchedFriendCard.swift */; };
@@ -36,6 +38,8 @@
 		1280ABEE288A19AA00F7BB9B /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		1280ABF0288A270C00F7BB9B /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 		1280ABF2288A29E400F7BB9B /* InuNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InuNetworkLayer.swift; sourceTree = "<group>"; };
+		1280ABFE289209D500F7BB9B /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		1280AC0028920E1400F7BB9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12F0A90B288771C200FFAE0E /* SwiftUIViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewLayout.swift; sourceTree = "<group>"; };
 		12F0A90D288787E100FFAE0E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		7123AB2728906B14004E3C39 /* MatchedFriendCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedFriendCard.swift; sourceTree = "<group>"; };
@@ -67,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1280ABFD289209BB00F7BB9B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1280ABFE289209D500F7BB9B /* NotificationManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		7123AB3B2890AB5A004E3C39 /* LocalizationEffort */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +158,8 @@
 		940E2D1A288627000031F5C8 = {
 			isa = PBXGroup;
 			children = (
+				1280AC0028920E1400F7BB9B /* AppDelegate.swift */,
+				1280ABFD289209BB00F7BB9B /* Utils */,
 				940E2D2A288627020031F5C8 /* Assets.xcassets */,
 				71EDA49C288F14A100FE60EB /* Extensions */,
 				71EDA49D288F14B200FE60EB /* Logic */,
@@ -263,6 +277,7 @@
 				71EDA4A8288F172900FE60EB /* CircularButton.swift in Sources */,
 				1280ABF3288A29E400F7BB9B /* InuNetworkLayer.swift in Sources */,
 				12F0A90E288787E100FFAE0E /* MainScreen.swift in Sources */,
+				1280AC0128920E1400F7BB9B /* AppDelegate.swift in Sources */,
 				71EDA4AC288F179700FE60EB /* FriendDetails.swift in Sources */,
 				94AF20B62888DEF400B99A77 /* ColorExtensions.swift in Sources */,
 				12F0A90C288771C200FFAE0E /* SwiftUIViewLayout.swift in Sources */,
@@ -270,6 +285,7 @@
 				71EDA4AA288F175D00FE60EB /* Card.swift in Sources */,
 				1280ABF1288A270C00F7BB9B /* MainScreenViewModel.swift in Sources */,
 				7123AB2828906B14004E3C39 /* MatchedFriendCard.swift in Sources */,
+				1280ABFF289209D500F7BB9B /* NotificationManager.swift in Sources */,
 				940E2D27288627000031F5C8 /* InudoptionApp.swift in Sources */,
 				1280ABEB288A13FD00F7BB9B /* InudoptionTabView.swift in Sources */,
 				1280ABEF288A19AA00F7BB9B /* Friend.swift in Sources */,
