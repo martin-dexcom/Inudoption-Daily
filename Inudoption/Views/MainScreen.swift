@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainScreen: View {
-    @ObservedObject var viewModel = MainScreenViewModel()
+    @ObservedObject var viewModel = MainScreenViewModel(inuNetworkLayer: InuNetworkLayer())
     
     var body: some View {
         VStack(alignment: .center) {
@@ -50,6 +50,7 @@ struct MainScreen: View {
         .padding(.horizontal, 17)
         .padding(.vertical, 28)
         .onAppear {
+            viewModel.getFriends(friendCount: 10)
             NotificationManager.shared.requestNotificationPermission()
         }
     }

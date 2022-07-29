@@ -8,9 +8,11 @@
 import Foundation
 import Combine
 
-class InuNetworkLayer {
+protocol InuNetworkClient {
+    func friendsFromInudoption(friendCount: Int) -> AnyPublisher<[Friend], Error>
+}
 
-    static let shared = InuNetworkLayer()
+class InuNetworkLayer: InuNetworkClient {
 
     private let inudoptionEndpoint = "https://qfh2rnry06.execute-api.us-west-1.amazonaws.com/dev/pets"
 

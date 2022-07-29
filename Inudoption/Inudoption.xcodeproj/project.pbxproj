@@ -14,6 +14,9 @@
 		1280ABF3288A29E400F7BB9B /* InuNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280ABF2288A29E400F7BB9B /* InuNetworkLayer.swift */; };
 		1280ABFF289209D500F7BB9B /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280ABFE289209D500F7BB9B /* NotificationManager.swift */; };
 		1280AC0128920E1400F7BB9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280AC0028920E1400F7BB9B /* AppDelegate.swift */; };
+		1280AC2828934ED400F7BB9B /* InudoptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280AC2728934ED400F7BB9B /* InudoptionTests.swift */; };
+		1280AC302893553A00F7BB9B /* MockInuNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280AC2F2893553A00F7BB9B /* MockInuNetworkLayer.swift */; };
+		1280AC3328935AD600F7BB9B /* FriendGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1280AC3228935AD600F7BB9B /* FriendGenerator.swift */; };
 		12F0A90C288771C200FFAE0E /* SwiftUIViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0A90B288771C200FFAE0E /* SwiftUIViewLayout.swift */; };
 		12F0A90E288787E100FFAE0E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F0A90D288787E100FFAE0E /* MainScreen.swift */; };
 		7123AB2828906B14004E3C39 /* MatchedFriendCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7123AB2728906B14004E3C39 /* MatchedFriendCard.swift */; };
@@ -32,6 +35,16 @@
 		94AF20B62888DEF400B99A77 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF20B52888DEF400B99A77 /* ColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1280AC2928934ED400F7BB9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 940E2D1B288627000031F5C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 940E2D22288627000031F5C8;
+			remoteInfo = Inudoption;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1280ABEA288A13FD00F7BB9B /* InudoptionTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InudoptionTabView.swift; sourceTree = "<group>"; };
 		1280ABEC288A14D700F7BB9B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -40,6 +53,10 @@
 		1280ABF2288A29E400F7BB9B /* InuNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InuNetworkLayer.swift; sourceTree = "<group>"; };
 		1280ABFE289209D500F7BB9B /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		1280AC0028920E1400F7BB9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1280AC2528934ED400F7BB9B /* InudoptionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InudoptionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1280AC2728934ED400F7BB9B /* InudoptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InudoptionTests.swift; sourceTree = "<group>"; };
+		1280AC2F2893553A00F7BB9B /* MockInuNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInuNetworkLayer.swift; sourceTree = "<group>"; };
+		1280AC3228935AD600F7BB9B /* FriendGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendGenerator.swift; sourceTree = "<group>"; };
 		12F0A90B288771C200FFAE0E /* SwiftUIViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewLayout.swift; sourceTree = "<group>"; };
 		12F0A90D288787E100FFAE0E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		7123AB2728906B14004E3C39 /* MatchedFriendCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedFriendCard.swift; sourceTree = "<group>"; };
@@ -61,6 +78,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1280AC2228934ED400F7BB9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		940E2D20288627000031F5C8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,6 +99,32 @@
 			isa = PBXGroup;
 			children = (
 				1280ABFE289209D500F7BB9B /* NotificationManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1280AC2628934ED400F7BB9B /* InudoptionTests */ = {
+			isa = PBXGroup;
+			children = (
+				1280AC3128935AC500F7BB9B /* Utils */,
+				1280AC2E2893552200F7BB9B /* Mock */,
+				1280AC2728934ED400F7BB9B /* InudoptionTests.swift */,
+			);
+			path = InudoptionTests;
+			sourceTree = "<group>";
+		};
+		1280AC2E2893552200F7BB9B /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				1280AC2F2893553A00F7BB9B /* MockInuNetworkLayer.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		1280AC3128935AC500F7BB9B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1280AC3228935AD600F7BB9B /* FriendGenerator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -168,6 +218,7 @@
 				71EDA49F288F14EE00FE60EB /* Protocols */,
 				71EDA4A0288F151200FE60EB /* Views */,
 				940E2D25288627000031F5C8 /* Inudoption */,
+				1280AC2628934ED400F7BB9B /* InudoptionTests */,
 				940E2D24288627000031F5C8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -176,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				940E2D23288627000031F5C8 /* Inudoption.app */,
+				1280AC2528934ED400F7BB9B /* InudoptionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,6 +252,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1280AC2428934ED400F7BB9B /* InudoptionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1280AC2D28934ED400F7BB9B /* Build configuration list for PBXNativeTarget "InudoptionTests" */;
+			buildPhases = (
+				1280AC2128934ED400F7BB9B /* Sources */,
+				1280AC2228934ED400F7BB9B /* Frameworks */,
+				1280AC2328934ED400F7BB9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1280AC2A28934ED400F7BB9B /* PBXTargetDependency */,
+			);
+			name = InudoptionTests;
+			productName = InudoptionTests;
+			productReference = 1280AC2528934ED400F7BB9B /* InudoptionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		940E2D22288627000031F5C8 /* Inudoption */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 940E2D31288627020031F5C8 /* Build configuration list for PBXNativeTarget "Inudoption" */;
@@ -227,6 +297,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					1280AC2428934ED400F7BB9B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 940E2D22288627000031F5C8;
+					};
 					940E2D22288627000031F5C8 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -247,11 +321,19 @@
 			projectRoot = "";
 			targets = (
 				940E2D22288627000031F5C8 /* Inudoption */,
+				1280AC2428934ED400F7BB9B /* InudoptionTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1280AC2328934ED400F7BB9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		940E2D21288627000031F5C8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +347,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1280AC2128934ED400F7BB9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1280AC2828934ED400F7BB9B /* InudoptionTests.swift in Sources */,
+				1280AC3328935AD600F7BB9B /* FriendGenerator.swift in Sources */,
+				1280AC302893553A00F7BB9B /* MockInuNetworkLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		940E2D1F288627000031F5C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,6 +386,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1280AC2A28934ED400F7BB9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 940E2D22288627000031F5C8 /* Inudoption */;
+			targetProxy = 1280AC2928934ED400F7BB9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		7123AB402890ADE4004E3C39 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -307,6 +407,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1280AC2B28934ED400F7BB9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = con.dexcom.InudoptionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Inudoption.app/Inudoption";
+			};
+			name = Debug;
+		};
+		1280AC2C28934ED400F7BB9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = con.dexcom.InudoptionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Inudoption.app/Inudoption";
+			};
+			name = Release;
+		};
 		940E2D2F288627020031F5C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -482,6 +616,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1280AC2D28934ED400F7BB9B /* Build configuration list for PBXNativeTarget "InudoptionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1280AC2B28934ED400F7BB9B /* Debug */,
+				1280AC2C28934ED400F7BB9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		940E2D1E288627000031F5C8 /* Build configuration list for PBXProject "Inudoption" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

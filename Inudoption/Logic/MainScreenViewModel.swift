@@ -12,6 +12,7 @@ import SwiftUI
 class MainScreenViewModel: ObservableObject {
     
     var subscription: AnyCancellable?
+    let inuNetworkLayer: InuNetworkClient
     
     @AppStorage("preferredAnimal") var preferredAnimal: Animal = .dog
     
@@ -21,18 +22,14 @@ class MainScreenViewModel: ObservableObject {
     var filterExpression: (Friend) -> Bool = { _ in true }
     var filterExpressionForDummies: ((Binding<Friend>) -> Bool) = { _ in true }
     
-    func filterFriends(with id: String) {
-        friends = friends.filter { $0.id != id }
-    }
-    
-    init() {
-        getFriends()
+    init(inuNetworkLayer: InuNetworkClient) {
+        self.inuNetworkLayer = inuNetworkLayer
         filterExpression = { [weak self] in $0.animal == self?.preferredAnimal }
         filterExpressionForDummies = { [weak self] in $0.wrappedValue.animal == self?.preferredAnimal }
     }
     
-    func getFriends() {
-        subscription = InuNetworkLayer.shared.friendsFromInudoption(friendCount: 10)
+    func getFriends(friendCount: Int) {
+        subscription = inuNetworkLayer.friendsFromInudoption(friendCount: friendCount)
             .receive(on: RunLoop.main)
             .sink { error in
                 if case .failure(let error) = error {
